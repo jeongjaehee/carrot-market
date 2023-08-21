@@ -1,0 +1,52 @@
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #f9f9fb;
+  background-color: #fff;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100vw;
+}
+.footer-icons {
+  width: 20%;
+}
+.footer-icons a {
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+  text-align: center;
+}
+@keyframes icons-floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+.footer-icons a:hover img {
+  animation: 0.4s icons-floating;
+}
+.footer-icons a img {
+  width: 24px;
+}
+.footer-icons a span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 11px;
+}
